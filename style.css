@@ -1,11 +1,3 @@
-
-/* ========================================
-   PORTFOLIO MATTHIEU
-   Couleurs : Noir, Blanc et Saumon
-======================================== */
-
-/* ===== STYLE GENERAL ===== */
-
 :root {
     font-family: Inter, system-ui, -apple-system,
                  "Segoe UI", sans-serif;
@@ -29,8 +21,6 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
-/* ===== HEADER ET NAVIGATION ===== */
 
 header {
     background: #1b1b1b;
@@ -78,8 +68,6 @@ nav a:focus-visible {
     color: #e9967a;
 }
 
-/* ===== CONTENU PRINCIPAL ===== */
-
 main {
     max-width: 1080px;
     margin: auto;
@@ -87,21 +75,15 @@ main {
     min-height: 70vh;
 }
 
-/* ===== NAVIGATION SANS JAVASCRIPT ===== */
-
 .page {
     display: none;
     scroll-margin-top: 110px;
 }
 
-/* Accueil visible par défaut */
-
 #accueil {
     display: block;
 }
 
-/* Masquer l'accueil uniquement
-   lorsqu'un projet est sélectionné */
 
 body:has(#projet1:target) #accueil,
 body:has(#projet2:target) #accueil,
@@ -109,15 +91,11 @@ body:has(#projet3:target) #accueil {
     display: none;
 }
 
-/* Afficher le projet sélectionné */
-
 #projet1:target,
 #projet2:target,
 #projet3:target {
     display: block;
 }
-
-/* ===== TITRES ET TEXTES ===== */
 
 .eyebrow {
     color: #e9967a;
@@ -154,8 +132,6 @@ p {
     max-width: 760px;
 }
 
-/* ===== BOUTONS ===== */
-
 .actions {
     display: flex;
     gap: 12px;
@@ -184,13 +160,9 @@ p {
     filter: brightness(1.1);
 }
 
-/* ===== SECTIONS ===== */
-
 .section {
     margin-top: 74px;
 }
-
-/* ===== CARTES DES PROJETS ===== */
 
 .cards {
     display: grid;
@@ -214,7 +186,6 @@ p {
 }
 
 .card:hover {
-    transform: translateY(-4px);
     border-color: #e9967a;
 }
 
