@@ -181,8 +181,6 @@ p {
 .card {
     display: block;
     cursor: pointer;
-    transition: transform 0.2s,
-                border-color 0.2s;
 }
 
 .card:hover {
