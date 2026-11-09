@@ -7,122 +7,259 @@
     <title>Portfolio — Matthieu</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- NAVIGATION -->
     <header>
-       
+        <div class="nav">
+            <a href="#accueil" class="brand">
+                Matthieu<span>.</span>
+            </a>
 
-<header>
-    <div class="nav">
-        <a href="#accueil" class="brand">Matthieu.</a>
-
-        <nav>
-            <a href="#accueil">Accueil</a>
-            <a href="#projet1">Projet 1</a>
-            <a href="#projet2">Projet 2</a>
-            <a href="#projet3">Projet 3</a>
-            <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a>
-        </nav>
-    </div>
-</header>
-
+            <nav>
+                <a href="#accueil">Accueil</a>
+                <a href="#projet1">Projet 1</a>
+                <a href="#projet2">Projet 2</a>
+                <a href="#projet3">Projet 3</a>
+                <a href="assets/cv.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">Mon CV</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        
-<main>
-    <section id="accueil">
-        <h2>Matthieu TOLISANO</h2>
 
-        <h3>
-            Étudiant en informatique |
-            Spécialisation Intelligence Artificielle &amp; Data
-        </h3>
-        <p>
-            Actuellement étudiant en informatique, je me spécialise
-            dans les domaines de l'intelligence artificielle et de
-            la gestion des données (IA/DATA).
-        </p>
+        <!-- PAGE D'ACCUEIL -->
+        <section class="page" id="accueil">
 
-        <p>
-            Passionné par ces domaines, je cherche constamment
-            à approfondir mes connaissances et à développer mes
-            compétences techniques à travers des projets concrets.
-        </p>
-        
-<section class="page" id="projet1">
-    <h2>Projet RED</h2>
+            <div class="eyebrow">
+                Portfolio · Informatique · IA / Data
+            </div>
 
-    <p>Le projet RED consistait à développer un jeu style RPG dans le terminal de commande VS Code.</p>
+            <h1>
+                Matthieu <span class="accent">TOLISANO</span>
+            </h1>
 
-    <div class="video">
-        <p></p>
-    </div>
+            <p class="lead">
+                Étudiant en informatique |
+                Spécialisation Intelligence Artificielle &amp; Data
+            </p>
 
-    <div class="panel">
-        <h3>À propos du projet</h3>
-        <p>
-            En groupe de 3 le projet devait etre realiser en moins d'une semaine. Gestion de marcher, combat, personnalisation de personnage, map ou encore un systeme de gain de niveau, argent ect.
-        </p>
-    </div>
+            <p>
+                Actuellement étudiant en informatique, je me spécialise
+                dans les domaines de l'intelligence artificielle et de
+                la gestion des données (IA/DATA).
+            </p>
 
-    <div class="panel">
-        <h3>Technologies utilisées</h3>
-        <p>Golang</p>
-    </div>
-</section>
+            <p>
+                Passionné par ces domaines, je cherche constamment
+                à approfondir mes connaissances et à développer mes
+                compétences techniques à travers des projets concrets.
+            </p>
 
-<section class="page" id="projet2">
-    <h2>Projet JS-Comics-Shop</h2>
+            <div class="actions">
+                <a href="#projet1" class="btn primary">
+                    Découvrir mes projets
+                </a>
 
-    <p>Ce projet consistait à développer un site e-commerce pour la vente de bandes dessinées,manga, figurines ou DVD.</p>
+                <a href="assets/cv.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn">
+                    Consulter mon CV
+                </a>
+            </div>
 
-    <div class="video">
-        <p></p>
-    </div>
+            <!-- APERÇU DES PROJETS -->
+            <div class="section">
+                <h2>Mes projets</h2>
 
-    <div class="panel">
-        <h3>À propos du projet</h3>
-        <p>
-            Le projet réalisé en groupe de 2 avait pour but de créer un site e-commerce fonctionnel. Le site devait permettre aux utilisateurs de parcourir les produits, d'ajouter des articles à leur panier et de passer commande. Nous avons mis en place un système de gestion des stocks et une interface utilisateur intuitive pour améliorer l'expérience d'achat.
-        </p>
-    </div>
+                <div class="cards">
 
-    <div class="panel">
-        <h3>Technologies utilisées</h3>
-        <p>HTML, CSS, JavaScript</p>
-    </div>
-</section>
+                    <a href="#projet1" class="card">
+                        <div class="thumb">⌘</div>
+                        <h3>Projet RED</h3>
+                        <p>Développement d'un jeu RPG en terminal.</p>
 
-<section class="page" id="projet3">
-    <h2>Go-reloaded</h2>
+                        <div class="chips">
+                            <span class="chip">Golang</span>
+                        </div>
+                    </a>
 
-    <p>Go-reloaded consistait a crée un programme qui permettait de recharger des données dans un format spécifique.</p>
+                    <a href="#projet2" class="card">
+                        <div class="thumb">◇</div>
+                        <h3>JS-Comics-Shop</h3>
+                        <p>Création d'un site e-commerce.</p>
 
-    <div class="video">
-        <p></p>
-    </div>
+                        <div class="chips">
+                            <span class="chip">HTML</span>
+                            <span class="chip">CSS</span>
+                            <span class="chip">JavaScript</span>
+                        </div>
+                    </a>
 
-    <div class="panel">
-        <h3>À propos du projet</h3>
-        <p>
-            Projet solo, il consistait a pre-ecrire une phrase et realiser des changement dans cette phrase pour la recharger dans un format specifique. Le projet devait etre realiser en 2 jours.
-        </p>
-    </div>
+                    <a href="#projet3" class="card">
+                        <div class="thumb">▤</div>
+                        <h3>Go-reloaded</h3>
+                        <p>Programme de transformation de texte.</p>
 
-    <div class="panel">
-        <h3>Technologies utilisées</h3>
-        <p>Golang</p>
-    </div>
-</section>
+                        <div class="chips">
+                            <span class="chip">Golang</span>
+                        </div>
+                    </a>
 
-    </section>
-    
-</main>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PROJET 1 -->
+        <section class="page" id="projet1">
+
+            <div class="eyebrow">Projet 01 / 03</div>
+
+            <h1>Projet <span class="accent">RED</span></h1>
+
+            <p class="lead">
+                Le projet RED consistait à développer
+                un jeu style RPG dans le terminal de commande VS Code.
+            </p>
+
+            <div class="video">
+                <div>
+                    <span class="play">▶</span>
+                    Vidéo de démonstration à venir
+                </div>
+            </div>
+
+            <div class="split">
+
+                <div class="panel">
+                    <h2>À propos du projet</h2>
+                    <p>
+                        En groupe de 3, le projet devait être réalisé
+                        en moins d'une semaine. Gestion de marché,
+                        combats, personnalisation de personnage,
+                        carte et système de progression.
+                    </p>
+                </div>
+
+                <div class="panel">
+                    <h2>Technologies utilisées</h2>
+
+                    <div class="chips">
+                        <span class="chip">Golang</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJET 2 -->
+        <section class="page" id="projet2">
+
+            <div class="eyebrow">Projet 02 / 03</div>
+
+            <h1>
+                Projet <span class="accent">JS-Comics-Shop</span>
+            </h1>
+
+            <p class="lead">
+                Ce projet consistait à développer un site
+                e-commerce pour la vente de bandes dessinées,
+                mangas, figurines et DVD.
+            </p>
+
+            <div class="video">
+                <div>
+                    <span class="play">▶</span>
+                    Vidéo de démonstration à venir
+                </div>
+            </div>
+
+            <div class="split">
+
+                <div class="panel">
+                    <h2>À propos du projet</h2>
+                    <p>
+                        Le projet réalisé en groupe de 2 avait pour but
+                        de créer un site e-commerce fonctionnel.
+                        Le site devait permettre aux utilisateurs
+                        de parcourir les produits, d'ajouter des
+                        articles à leur panier et de passer commande.
+                        Nous avons mis en place un système de gestion
+                        des stocks et une interface utilisateur intuitive
+                        pour améliorer l'expérience d'achat.
+                    </p>
+                </div>
+
+                <div class="panel">
+                    <h2>Technologies utilisées</h2>
+
+                    <div class="chips">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJET 3 -->
+        <section class="page" id="projet3">
+
+            <div class="eyebrow">Projet 03 / 03</div>
+
+            <h1>
+                <span class="accent">Go-reloaded</span>
+            </h1>
+
+            <p class="lead">
+                Go-reloaded consistait à créer un programme
+                permettant de transformer du texte selon
+                des règles de formatage spécifiques.
+            </p>
+
+            <div class="video">
+                <div>
+                    <span class="play">▶</span>
+                    Vidéo de démonstration à venir
+                </div>
+            </div>
+
+            <div class="split">
+
+                <div class="panel">
+                    <h2>À propos du projet</h2>
+                    <p>
+                        Projet individuel réalisé en deux jours.
+                        Il consistait à modifier une phrase
+                        préalablement écrite afin d'appliquer
+                        différentes transformations et règles
+                        de formatage.
+                    </p>
+                </div>
+
+                <div class="panel">
+                    <h2>Technologies utilisées</h2>
+
+                    <div class="chips">
+                        <span class="chip">Golang</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
+    <!-- PIED DE PAGE -->
     <footer>
-        <p>© 2026 Matthieu</p>
+        <p>© 2026 Matthieu · Portfolio étudiant IA / Data</p>
     </footer>
+
 </body>
 </html>
